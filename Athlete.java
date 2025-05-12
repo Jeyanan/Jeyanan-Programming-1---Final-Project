@@ -12,7 +12,8 @@ public class Athlete
     private String name;
     private Gender gender;
     private ArrayList<Activity> activities;
-
+    private String id;
+    
     public Athlete(String name, Gender gender) 
     {
         this.name = name;
@@ -31,5 +32,17 @@ public class Athlete
         {
             System.out.println(a);
         }
+    }
+    
+    public String getId() 
+    {
+        return id;
+    }
+    
+    public Athlete(String id, String name, Gender gender) 
+    {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
     }
 }

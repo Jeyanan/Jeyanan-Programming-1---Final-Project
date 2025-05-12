@@ -10,6 +10,7 @@ public class Activity
     protected String date;
     protected double distance;
     protected ModeOfTransport mode;
+    private Athlete athlete;
 
     public Activity(String date, double distance, ModeOfTransport mode) 
     {
@@ -21,5 +22,18 @@ public class Activity
     public void printDetails() 
     {
         System.out.println(date + " " + distance + "km " + mode);
+    }
+    
+    public Athlete getAthlete()
+    {
+        return athlete;
+    }
+    
+    public Activity(Athlete athlete, double distance, ModeOfTransport mode) 
+    {
+        this.athlete = athlete;
+        this.distance = distance;
+        this.mode = mode;
+    
     }
 }

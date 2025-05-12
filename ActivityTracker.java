@@ -70,4 +70,23 @@ public class ActivityTracker
             }
         }  
     }
+    
+    public void listActivitiesByAthlete(String athleteId) 
+    {
+        boolean found = false;
+
+        for (Activity activity : activities) 
+        {
+            if (activity.getAthlete().getId().equalsIgnoreCase(athleteId)) 
+            {
+                System.out.println(activity); // toString() in Activity
+                found = true;
+            }
+        }
+
+        if (!found) 
+        {
+                System.out.println("No activities found for athlete ID: " + athleteId);
+        }
+    }
 }
