@@ -19,11 +19,13 @@ public class ActivityTracker
         equipmentList = new ArrayList<>();
     }
 
-    public void addAthlete(Athlete athlete)
+    public void addAthlete(Athlete athlete) 
     {
         if (athlete != null) 
         {
             athletes.add(athlete);
+        } else {
+            System.out.println("Error: Athlete is null.");
         }
     }
 
@@ -182,4 +184,5 @@ public class ActivityTracker
 
         return totalCalories;
     }
+    
 }

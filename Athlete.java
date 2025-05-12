@@ -16,11 +16,26 @@ public class Athlete
     
     public Athlete(String name, Gender gender) 
     {
+        if (id == null || id.isEmpty()) 
+        {
+             throw new IllegalArgumentException("ID is required.");
+        } 
+         
+        if (name == null || name.isEmpty()) 
+        {
+             throw new IllegalArgumentException("Name is required.");
+        }
+         
+        if (gender == null)
+        { 
+             throw new IllegalArgumentException("Gender is required.");
+        }
+        
         this.name = name;
         this.gender = gender;
         activities = new ArrayList<>();
     }
-
+    
     public void addActivity(Activity activity) 
     {
         activities.add(activity);

@@ -16,6 +16,31 @@ public class Activity
 
     public Activity(int id, String date, double distance, ModeOfTransport mode, Athlete athlete) 
     {
+        if (id < 0)
+        { 
+            throw new IllegalArgumentException("ID cannot be negative.");
+        } 
+        
+        if (distance < 0)
+        { 
+             throw new IllegalArgumentException("Distance must be non-negative.");
+        }
+        
+        if (date == null || date.isEmpty()) 
+        {
+             throw new IllegalArgumentException("Date cannot be empty.");
+        }
+        
+        if (mode == null) 
+        {
+             throw new IllegalArgumentException("Mode is required.");
+        }
+        
+        if (athlete == null)
+        {   
+            throw new IllegalArgumentException("Athlete cannot be null.");
+        }
+        
         this.id = id;
         this.date = date;
         this.distance = distance;
