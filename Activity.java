@@ -11,6 +11,7 @@ public class Activity
     protected double distance;
     protected ModeOfTransport mode;
     private Athlete athlete;
+    private int id;
     
 
     public Activity(String date, double distance, ModeOfTransport mode) 
@@ -41,5 +42,16 @@ public class Activity
     public ModeOfTransport getModeOfTransport() 
     {
         return mode;
+    }
+    
+    public int getId() 
+    {
+        return id;
+    }
+    
+    public Activity(int id, ModeOfTransport mode) 
+    {
+        this.id = id;
+        this.mode = mode;
     }
 }

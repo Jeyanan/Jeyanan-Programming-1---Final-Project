@@ -107,4 +107,18 @@ public class ActivityTracker
              System.out.println("No activities found for mode: " + mode);
        }
     }
+    
+    public void printActivityDetails(int activityId) 
+    {
+       for (Activity activity : activities) 
+       {
+            if (activity.getId() == activityId) {
+                 System.out.println("Activity Details:");
+                 System.out.println(activity);  
+                 return;
+        }
+       }
+    
+       System.out.println("No activity found with ID: " + activityId);
+    }
 }
