@@ -134,4 +134,19 @@ public class ActivityTracker
 
         return total;
     }
+    
+    public double getDistanceByAthlete(String athleteId) 
+    {
+        double total = 0;
+
+        for (Activity activity : activities) 
+        {
+             if (activity.getAthlete().getId().equalsIgnoreCase(athleteId)) 
+             {
+                  total += activity.getDistance();
+             }
+        }
+
+        return total;
+    }
 }
