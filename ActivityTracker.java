@@ -56,4 +56,18 @@ public class ActivityTracker
             }
         }    
     }
+    
+    public void listAllActivities() 
+    {
+        if (activities.isEmpty()) 
+        {
+            System.out.println("No activities recorded.");
+        } else {
+            System.out.println("List of Activities:");
+            for (Activity activity : activities) 
+            {
+                System.out.println(activity); // assumes toString() is implemented
+            }
+        }  
+    }
 }
