@@ -91,7 +91,7 @@ public class ActivityTracker
     }
     
     public void listActivitiesByMode(ModeOfTransport mode) {
-        boolean found = false;
+       boolean found = false;
 
        for (Activity activity : activities) 
        {
@@ -112,13 +112,26 @@ public class ActivityTracker
     {
        for (Activity activity : activities) 
        {
-            if (activity.getId() == activityId) {
+            if (activity.getId() == activityId) 
+            {
                  System.out.println("Activity Details:");
                  System.out.println(activity);  
                  return;
-        }
+            }
        }
     
        System.out.println("No activity found with ID: " + activityId);
+    }
+    
+    public double getTotalDistance() 
+    {
+        double total = 0;
+
+        for (Activity activity : activities) 
+        {
+            total += activity.getDistance();
+        }
+
+        return total;
     }
 }

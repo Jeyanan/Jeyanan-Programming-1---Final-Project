@@ -54,4 +54,17 @@ public class Activity
         this.id = id;
         this.mode = mode;
     }
+    
+    public double getDistance() 
+    {
+        return distance;
+    }
+    
+    public Activity(int id, Athlete athlete, double distance, ModeOfTransport mode) 
+    {
+        this.id = id;
+        this.athlete = athlete;
+        this.distance = distance;
+        this.mode = mode;
+    }
 }
