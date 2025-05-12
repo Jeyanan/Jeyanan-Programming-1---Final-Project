@@ -149,4 +149,37 @@ public class ActivityTracker
 
         return total;
     }
+    
+    public double getCaloriesByAthlete(String athleteId) 
+    {
+        double totalCalories = 0;
+
+        for (Activity activity : activities) 
+        {
+             if (activity.getAthlete().getId().equalsIgnoreCase(athleteId)) 
+             {
+                  double distance = activity.getDistance();
+                  ModeOfTransport mode = activity.getModeOfTransport();
+
+                  double caloriesPerKm;
+
+            
+                  switch (mode) 
+                  {
+                        case WALK:
+                        case RUN:
+                        case SWIM:
+                             caloriesPerKm = 50;
+                             break;
+                        default:
+                        caloriesPerKm = 30;
+                        break;
+                  }
+
+                  totalCalories += distance * caloriesPerKm;
+             } 
+        }
+
+        return totalCalories;
+    }
 }
