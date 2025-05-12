@@ -86,7 +86,25 @@ public class ActivityTracker
 
         if (!found) 
         {
-                System.out.println("No activities found for athlete ID: " + athleteId);
+            System.out.println("No activities found for athlete ID: " + athleteId);
         }
+    }
+    
+    public void listActivitiesByMode(ModeOfTransport mode) {
+        boolean found = false;
+
+       for (Activity activity : activities) 
+       {
+             if (activity.getModeOfTransport() == mode) 
+             {
+                 System.out.println(activity);  
+                 found = true;
+             }
+       }
+
+       if (!found) 
+       {
+             System.out.println("No activities found for mode: " + mode);
+       }
     }
 }
