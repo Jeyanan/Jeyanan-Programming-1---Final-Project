@@ -2,8 +2,8 @@
 /**
  * Write a description of class Activity here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Jeyanan)
+ * @version (May 11)
  */
 public class Activity 
 {
