@@ -1,0 +1,17 @@
+#Mon May 19 03:25:14 EDT 2025
+bluej.teamsettings.git.branch=
+bluej.teamsettings.git.protocol=https
+bluej.teamsettings.git.repositoryPrefix=/Jeyanan/Jeyanan-Programming-1---Final-Project.git
+bluej.teamsettings.git.server=github.com
+bluej.teamsettings.ignore1=.*\\.class
+bluej.teamsettings.ignore2=bluej\\.pkh
+bluej.teamsettings.ignore3=team\\.defs
+bluej.teamsettings.ignore4=.*\\.ctxt
+bluej.teamsettings.ignore5=.*\\~
+bluej.teamsettings.ignore6=.*\\\#
+bluej.teamsettings.ignore7=.*\\\#backup
+bluej.teamsettings.ignore8=\\.DS_Store
+bluej.teamsettings.user=Jeyanan
+bluej.teamsettings.vcs=git
+bluej.teamsettings.yourEmail=jeyanan07@gmail.com
+bluej.teamsettings.yourName=Jeyanan
